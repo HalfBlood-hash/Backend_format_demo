@@ -1,0 +1,5 @@
+
+npm init
+
+2. npm i mongoose -to install the mongoose driver in the app
+3. import the and connect the mongoose
