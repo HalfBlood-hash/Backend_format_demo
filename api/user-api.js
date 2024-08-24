@@ -2,12 +2,12 @@
 const exp =require('express')
 const userApp=exp.Router()
 
-const{getAllUser}=require('../controllers/usercontroller')
+const getusername=require('../controllers/usercontroller')
 const  expressErrorHandler=require('express-async-handler')
 
 
 
-userApp.get('/getuser',expressErrorHandler(getAllUser))
+userApp.get('/getuser',expressErrorHandler(getusername))
 
 
 module.exports=userApp

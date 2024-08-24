@@ -12,6 +12,7 @@ app.use(exp.json())
 const userApp = require('./api/user-api')
 app.use('/user-api',userApp)
 
+
 app.use((err,req,res,next)=>{
     res.send({message:'message from error handler',payload:err.message})
 })

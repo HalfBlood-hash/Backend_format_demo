@@ -1,12 +1,13 @@
 
-const {user}=require('../db')
+const user=require('../db')
 
 
 const getusername=async(req,res)=>{
-    res.send({message:"get username "})
+    console.log("this controller")
+    res.send({message:"get username"})
 
 
 }
 
 
-module.exports={getusername}
+module.exports=getusername
